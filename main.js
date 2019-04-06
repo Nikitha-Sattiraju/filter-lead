@@ -1,22 +1,3 @@
-// $("body").on("change", ".filter", function (e) {
-// e.preventDefault();
-//
-// console.log("Hello, world!");
-//
-// const $this_filter = $(this);
-//
-// const state_type = $this_filter.val();
-//
-// console.log("State" + state_type);
-//
-// $(".state").removeClass("active");
-//
-// $("." + state_type).addClass("active");
-//
-// console.log("Hello, world!");
-//
-// });
-
 //GET WHAT IS SELECTED:
 $(document).ready(function () { // we must wait for the DOM to be ready as the browser can take a little while to read all of the HTML and build the elements
 
@@ -27,13 +8,15 @@ $(document).ready(function () { // we must wait for the DOM to be ready as the b
 		$("#character").append(option_template({ state: person.state }));
 	});
 
-	$('#enter').on("click", function (e) {
+	$('#character').on("change", function (e) {
 		e.preventDefault(); //disable the button's default behavior
 		// DO STUFF...
 		persons_name = $("#character").val();
 		result = _.find(data, { state: persons_name });
+		// result2 = _.find(data, { number: persons_name })
+		// console.log(result);
+		// console.log(result2);
 
-		console.log(result);
 
 		$("#favorites").html(person_template({ person: result }));
 	});
@@ -41,3 +24,18 @@ $(document).ready(function () { // we must wait for the DOM to be ready as the b
 
 
 }); // closes document ready
+
+$("body").on("click", ".start-btn", function (e) {
+	e.preventDefault();
+
+	const myPath = $(this);
+	mySlide = myPath.data('id'),
+		mySlideBackground = mySlide + "-background";
+
+	$("#" + mySlideBackground).addClass('active');
+	$("#" + mySlide).addClass('active');
+
+	$('html, body').animate({
+		scrollTop: $("#" + mySlideBackground).offset().top
+	}, 400);
+});
