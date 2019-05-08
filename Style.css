@@ -28,15 +28,14 @@ html, body {
     /* text-align: center; */
 }
 
-.header {
-    width: 100%;
-    /*padding: 10px;*/
-    margin-left: auto;
+/* .header {
+    width: 100%; */
+/*padding: 10px;*/
+/* margin-left: auto;
     margin-right: auto;
     min-height: 400px;
     height: 100%;
-}
-
+} */
 /* figure img {
     width: 100%;
     max-width: none;
@@ -53,29 +52,26 @@ text-align: center;
 margin: 0 auto;
 max-width: 800px;
 } */
-.hide {
-    display: none;
-}
-
+/* display: none;
+} */
 .hide.active {
     display: block;
 }
 
-.image {
+/* .image {
     display: block;
     margin: 0 auto;
-    overflow: auto;
-    /*overflow: hidden;*/
-    width: 100%;
-    height: 100%;
-    /* max-height: none; */
-    background-size: cover;
-    /* background-position: top left; */
-    background-image: url(Images_Lead/lead-img.jpg);
-}
-
+    overflow: auto; */
+/*overflow: hidden;*/
+/* width: 100%;
+    height: 100%; */
+/* max-height: none; */
+/* background-size: cover; */
+/* background-position: top left; */
+/* background-image: url(Images_Lead/lead-img.jpg); */
+/* } */
 /* Creates the gray overlay on top of image */
-.section-wrap {
+/* .section-wrap {
     overflow: auto;
     padding: 2%;
     width: 60%;
@@ -88,8 +84,7 @@ max-width: 800px;
     font-family: "BWHaasDingbat", "BWHaasHead", "Helvetica Neue", Helvetica, Arial, sans-serif;
     top: 10%;
     left: 10%;
-}
-
+} */
 /* styling for headlines and subheads and text on landing page */
 .landing-page {
     font-size: 2em;
@@ -97,7 +92,20 @@ max-width: 800px;
     text-align: center;
 }
 
-.billboard-text p {
+#character {
+    color: black;
+    font-size: 1em;
+    /* text-transform: uppercase; */
+    font-weight: 450;
+    margin: 5% auto 1%;
+    display: block;
+    padding: 10% 10%;
+    border: 1px solid black;
+    background: transparent;
+    text-align: left;
+}
+
+/* .billboard-text p {
     display: block;
     margin-top: 1%;
     text-align: center;
@@ -106,9 +114,8 @@ max-width: 800px;
     line-height: 1.5em;
     font-weight: bold;
     padding: 10px 0px 0px 0px;
-}
-
-input.start-btn {
+} */
+/* input.start-btn {
     color: rgb(255, 255, 255);
     font-size: 1em;
     text-transform: uppercase;
@@ -118,17 +125,15 @@ input.start-btn {
     padding: 2% 5%;
     border: 1px solid #fff;
     background: transparent;
-}
-
-.map {
+} */
+/* .map {
     max-width: none;
     width: 100%;
 }
 
 .maphead {
     text-align: center;
-}
-
+} */
 h1 {
     font-size: 3.5em;
     text-align: center;
@@ -164,9 +169,10 @@ p {
 }
 
 .style {
-    text-align: center;
-    font-style: oblique;
+    /* text-align: left; */
+    /* font-style: oblique; */
     font-weight: bold;
+    font-family: sans-serif;
 }
 
 .byline {
@@ -180,39 +186,43 @@ p {
 }
 
 .population, .lead1 {
-    text-align: center;
+    text-align: left;
     padding: 5px;
-    font-size: 2em;
-    margin-left: 50px;
-    margin-right: 50px;
+    font-size: 1.5em;
+    /* margin-left: 50px;
+    margin-right: 50px; */
+    font-family: sans-serif;
+    font-weight: normal;
 }
 
 .state {
-    color: #4DA9BA;
+    color: black;
     padding: 5px;
-    font-size: 3em;
-    text-align: center;
-    margin-left: 50px;
-    margin-right: 50px;
+    font-size: 1.5em;
+    text-align: left;
+    /* margin-left: 50px;
+    margin-right: 50px; */
     text-transform: uppercase;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-family: sans-serif;
     margin-bottom: -10px;
 }
 
 .law {
     padding: 5px;
-    font-size: 1.25em;
+    margin-top: 5px;
+    font-size: 1em;
     /* font-weight: bold; */
-    text-align: center;
-    margin-left: 50px;
-    margin-right: 50px;
+    text-align: left;
+    /* margin-left: 50px;
+    margin-right: 50px; */
     color: grey;
     margin-bottom: 10px;
+    font-family: sans-serif;
 }
 
 .population {
-    color: #F4AC3D;
+    color: #EC4B26;
 }
 
 .lead1 {

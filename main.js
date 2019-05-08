@@ -25,17 +25,17 @@ $(document).ready(function () { // we must wait for the DOM to be ready as the b
 
 }); // closes document ready
 
-$("body").on("click", ".start-btn", function (e) {
-	e.preventDefault();
-
-	const myPath = $(this);
-	mySlide = myPath.data('id'),
-		mySlideBackground = mySlide + "-background";
-
-	$("#" + mySlideBackground).addClass('active');
-	$("#" + mySlide).addClass('active');
-
-	$('html, body').animate({
-		scrollTop: $("#" + mySlideBackground).offset().top
-	}, 400);
-});
+// $("body").on("click", ".start-btn", function (e) {
+// 	e.preventDefault();
+//
+// 	const myPath = $(this);
+// 	mySlide = myPath.data('id'),
+// 		mySlideBackground = mySlide + "-background";
+//
+// 	$("#" + mySlideBackground).addClass('active');
+// 	$("#" + mySlide).addClass('active');
+//
+// 	$('html, body').animate({
+// 		scrollTop: $("#" + mySlideBackground).offset().top
+// 	}, 400);
+// });
